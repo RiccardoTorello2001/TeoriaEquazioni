@@ -17,7 +17,15 @@ namespace EquazioniLibrary
             }
             return ris;
         }
-         
 
+        public static bool Isinconsisted(double a,double b)
+        {
+            bool ris = false;
+            if (a == 0 && b!=0)
+            {
+                ris = true;
+            }
+            return ris;
+        }
     }
 }
