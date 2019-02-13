@@ -101,5 +101,29 @@ namespace EquazioniLibrary.Tests
             Assert.AreEqual(asp, ott);
 
         }
+        [TestMethod]
+        public void TestDelta1()
+        {
+            double a = 7;
+            double b = 3;
+            double c = 4;
+            double asp = -103;
+            double ott = Equazioni.Delta(a,b,c);
+
+            Assert.AreEqual(asp, ott);
+
+        }
+        [TestMethod]
+        public void TestDelta2()
+        {
+            double a = 3;
+            double b = 9;
+            double c = 2;
+            double asp = 57;
+            double ott = Equazioni.Delta(a, b, c);
+
+            Assert.AreEqual(asp, ott);
+
+        }
     }
 }
