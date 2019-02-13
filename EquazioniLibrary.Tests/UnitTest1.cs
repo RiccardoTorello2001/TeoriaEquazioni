@@ -81,5 +81,25 @@ namespace EquazioniLibrary.Tests
             Assert.AreEqual(asp, ott);
 
         }
+        [TestMethod]
+        public void TestSec1()
+        {
+            double a = 6;
+            bool asp = true;
+            bool ott = Equazioni.IsDegree2(a);
+
+            Assert.AreEqual(asp, ott);
+
+        }
+        [TestMethod]
+        public void TestSec2()
+        {
+            double a = 0;
+            bool asp = false;
+            bool ott = Equazioni.IsDegree2(a);
+
+            Assert.AreEqual(asp, ott);
+
+        }
     }
 }
