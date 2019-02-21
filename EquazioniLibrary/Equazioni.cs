@@ -40,5 +40,23 @@ namespace EquazioniLibrary
         {
             return (b * b) - (4*(a * c));
         }
+        public static string EquationDegree1(double a, double b)
+        {
+            
+            string ris = "";
+           if(a==0&&b==0)
+           {
+                ris = "indeterminato";
+           }
+           else if(Isinconsisted(a,b))
+           {
+                ris="impossibile";
+           }
+           else
+           {
+                ris = Convert.ToString(b / a);
+           }
+            return ris;
+        }
     }
 }

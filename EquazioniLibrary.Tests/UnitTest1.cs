@@ -125,5 +125,38 @@ namespace EquazioniLibrary.Tests
             Assert.AreEqual(asp, ott);
 
         }
+        [TestMethod]
+        public void TestEquationDregee2()
+        {
+            double a = 3;
+            double b = 9;
+            string asp = "3";
+            string ott = Equazioni.EquationDegree1(a, b);
+
+            Assert.AreEqual(asp, ott);
+
+        }
+        [TestMethod]
+        public void TestEquationDregee3()
+        {
+            double a = 0;
+            double b = 0;
+            string asp = "indeterminato";
+            string ott = Equazioni.EquationDegree1(a, b);
+
+            Assert.AreEqual(asp, ott);
+
+        }
+        [TestMethod]
+        public void TestEquationDregee4()
+        {
+            double a = 0;
+            double b = 2;
+            string asp = "impossibile";
+            string ott = Equazioni.EquationDegree1(a, b);
+
+            Assert.AreEqual(asp, ott);
+
+        }
     }
 }
