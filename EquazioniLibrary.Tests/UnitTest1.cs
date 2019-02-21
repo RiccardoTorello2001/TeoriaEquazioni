@@ -38,6 +38,39 @@ namespace EquazioniLibrary.Tests
 
         }
         [TestMethod]
+        public void Testnotdet()
+        {
+            double a = 0;
+            double b = 0;
+            bool asp = true;
+            bool ott = Equazioni.IsnotDetermined(a,b);
+
+            Assert.AreEqual(asp, ott);
+
+        }
+        [TestMethod]
+        public void Testnotdet1()
+        {
+            double a = 0;
+            double b = 7;
+            bool asp = false;
+            bool ott = Equazioni.IsnotDetermined(a, b);
+
+            Assert.AreEqual(asp, ott);
+
+        }
+        [TestMethod]
+        public void Testnotdet2()
+        {
+            double a = 3;
+            double b = 3;
+            bool asp = false;
+            bool ott = Equazioni.IsnotDetermined(a, b);
+
+            Assert.AreEqual(asp, ott);
+
+        }
+        [TestMethod]
         public void Testimp1()
         {
             double a = 0;
@@ -126,7 +159,7 @@ namespace EquazioniLibrary.Tests
 
         }
         [TestMethod]
-        public void TestEquationDregee2()
+        public void TestEquationDegree2()
         {
             double a = 3;
             double b = 9;
@@ -137,7 +170,7 @@ namespace EquazioniLibrary.Tests
 
         }
         [TestMethod]
-        public void TestEquationDregee3()
+        public void TestEquationDegree3()
         {
             double a = 0;
             double b = 0;
@@ -148,7 +181,7 @@ namespace EquazioniLibrary.Tests
 
         }
         [TestMethod]
-        public void TestEquationDregee4()
+        public void TestEquationDegree4()
         {
             double a = 0;
             double b = 2;
